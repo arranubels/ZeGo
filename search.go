@@ -6,7 +6,7 @@ import (
 
 func (a Auth) Search(query string) (*Resource, error) {
 
-	path := "/search.json?query=" + net.QueryEscape(query)
+	path := "/search.json?query=" + url.QueryEscape(query)
 	resource, err := api(a, "GET", path, "")
 	if err != nil {
 		return nil, err
