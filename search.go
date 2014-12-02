@@ -18,7 +18,7 @@ func (a Auth) Search(query string) (*Resource, error) {
 
 func (a Auth) AnonymousSearch(query string) (*Resource, error) {
 
-	path := "/portal/search.json?query=" + net.QueryEscape(query)
+	path := "/portal/search.json?query=" + url.QueryEscape(query)
 	resource, err := api(a, "GET", path, "")
 	if err != nil {
 		return nil, err
