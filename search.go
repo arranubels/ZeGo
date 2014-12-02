@@ -4,6 +4,11 @@ import (
 		"net/url"
 		)
 
+type ResultsArray struct {
+			  Pagination
+        Results       []Ticket 
+}
+
 func (a Auth) Search(query string) (*Resource, error) {
 
 	path := "/search.json?query=" + url.QueryEscape(query)
