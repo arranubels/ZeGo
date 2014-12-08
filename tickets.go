@@ -73,18 +73,6 @@ func (a Auth) GetMultipleTickets(ticket_id string) (*Resource, error) {
 
 }
 
-func (a Auth) GetTicketComments(ticket_id string) (*Resource, error) {
-
-	path := "/tickets/" + ticket_id + "/comments.json"
-	resource, err := api(a, "GET", path, "")
-	if err != nil {
-		return nil, err
-	}
-
-	return resource, nil
-
-}
-
 func (a Auth) DeleteTicket(ticket_id string) (*Resource, error) {
 
 	path := "/tickets/" + ticket_id + ".json"
