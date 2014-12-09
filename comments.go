@@ -5,7 +5,7 @@ type CommentArray struct {
 }
 
 type Comment struct {
-        Id                    uint32 
+        Id                    uint64 
         Type                  string 
         Body                  string 
         Html_body             string 
