@@ -10,7 +10,7 @@ type Comment struct {
         Body                  string 
         Html_body             string 
         Public                bool 
-        Authur_id             uint32 
+        Author_id             uint32 
 				Attachments           []Attachment
         Via                   interface{} 
         Metadata              interface{} 
