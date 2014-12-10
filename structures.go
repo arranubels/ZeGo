@@ -9,7 +9,7 @@ type Pagination struct {
 
 type IdValue struct {
 	Id		uint32
-	Value	string
+	Value	interface{}
 }
 
 type Via struct {
