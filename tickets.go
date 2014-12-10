@@ -33,7 +33,7 @@ type Ticket struct {
         Ticket_form_id        uint32 
         Sharing_agreement_ids interface{} 
         Via                   interface{} 
-        Custom_Fields         interface{} 
+        Custom_Fields         []IdValue
         Fields                interface{} 
 }
 
