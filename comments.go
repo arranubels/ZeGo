@@ -11,7 +11,7 @@ type Comment struct {
         Html_body             string 
         Public                bool 
         Author_id             uint32 
-				Attachments           []Attachment
+        Attachments           []Attachment
         Via                   interface{} 
         Metadata              interface{} 
         Created_at            string 
