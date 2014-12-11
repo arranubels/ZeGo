@@ -9,7 +9,7 @@ type Audit struct {
         Id                    uint64 
         Ticket_id             uint64 
         Author_id             uint64 
-				Metadata              []map[string]interface{}
+				Metadata              interface{}
 				Created_at            string
 				Events                []map[string]interface{}
 }
