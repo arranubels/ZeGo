@@ -7,7 +7,7 @@ type UserArray struct {
 
 
 type User struct {
-        Id                    uint32
+        Id                    int64
         Url                   string
         Name                  string
         External_id           string
@@ -19,7 +19,7 @@ type User struct {
         Shared                bool
         Shared_agent          bool
         Locale                string
-        Locale_id             uint32
+        Locale_id             int64
         Time_zone             string
         Last_login_at         string
         Email                 string
@@ -27,9 +27,9 @@ type User struct {
         Signature             string
         Details               string
         Notes                 string
-        Organization_id       uint32
+        Organization_id       int64
         Role                  string
-        Customer_role_id      uint32
+        Customer_role_id      int64
         Moderator             bool
         Ticket_restriction    string
         Only_private_comments bool

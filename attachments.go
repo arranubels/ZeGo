@@ -1,7 +1,7 @@
 package zego
 
 type Attachment struct {
-        Id                    uint32 
+        Id                    int64
         File_name             string 
         Content_url           string 
         Content_type          string 

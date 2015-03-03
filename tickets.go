@@ -6,7 +6,7 @@ type TicketArray struct {
 }
 
 type Ticket struct {
-        Id                    uint32 
+        Id                    int64
         Url                   string 
         External_id           string 
         Created_at            string 
@@ -18,19 +18,19 @@ type Ticket struct {
         Priority              string 
         Status                string 
         Recipient             string 
-        Requester_id          uint32 
-        Submitter_id          uint32 
-        Assignee_id           uint32 
-        Organization_id       uint32 
-        Group_id              uint32 
-        Collaborator_ids      []uint32 
-        Forum_topic_id        uint32 
-        Problem_id            uint32 
+        Requester_id          int64
+        Submitter_id          int64
+        Assignee_id           int64
+        Organization_id       int64
+        Group_id              int64
+        Collaborator_ids      []int64
+        Forum_topic_id        int64
+        Problem_id            int64
         Has_incidents         bool 
         Due_at                string 
         Tags                  []string 
         Satisfaction_rating   string 
-        Ticket_form_id        uint32 
+        Ticket_form_id        int64
         Sharing_agreement_ids interface{} 
         Via                   interface{} 
         Custom_Fields         []IdValue

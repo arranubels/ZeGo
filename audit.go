@@ -6,21 +6,21 @@ type AuditArray struct {
 }
 
 type Audit struct {
-        Id                    uint64 
-        Ticket_id             uint64 
-        Author_id             uint64 
-				Metadata              interface{}
-				Created_at            string
-				Events                []map[string]interface{}
+        Id                    int64
+        Ticket_id             int64
+        Author_id             int64
+        Metadata              interface{}
+        Created_at            string
+        Events                []map[string]interface{}
 }
 
 type Event struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Body string
 	Html_body string
 	Public bool
-	Author_id	uint64
+	Author_id	int64
 	Attachments	[]Attachment
 	Via	Via
 	Metadata	interface{}
@@ -28,7 +28,7 @@ type Event struct {
 }
 
 type ExternalTicketEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Resource string
 	Body string
@@ -36,68 +36,68 @@ type ExternalTicketEvent struct {
 }
 
 type TicketShareEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
-	Agreement_id uint64
+	Agreement_id int64
 	Action string
 }
 
 type TweetEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Direct_message string
 	Body string
-	Recipients []uint64
+	Recipients []int64
 }
 
 type SatisfactionRatingEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Score string
-	Assignee_id uint64
+	Assignee_id int64
 	Body string
 }
 
 type PushEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Value string
 	Value_reference string
 }
 
 type LogMeInTranscriptEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Body string
 }
 
 type TicketErrorEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Message string
 }
 
 type TicketCCEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
-	Recipients []uint64
+	Recipients []int64
 	Via	Via
 }
 
 type FacebookCommentEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Data string
 	Body string
 	Html_body string
 	Public bool
 	Trusted bool
-	Author_id uint64
-	Graph_object_id uint64
+	Author_id int64
+	Graph_object_id int64
 }
 
 type FacebookEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Page string
 	Communication string
@@ -106,23 +106,23 @@ type FacebookEvent struct {
 }
 
 type NotificationEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Subject string
 	Body string
-	Recipients []uint64
+	Recipients []int64
 	Via	Via
 }
 
 type TicketCreateEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Field_name string
 	Value string
 }
 
 type TicketChangeEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Field_name string
 	Value string
@@ -130,14 +130,14 @@ type TicketChangeEvent struct {
 }
 
 type TicketCommentPrivacyChangeEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Public bool
-	Comment_id	uint64
+	Comment_id	int64
 }
 
 type VoiceCommandEvent struct {
-	Id	uint64
+	Id	int64
 	Type string
 	Data string
 	Body string
@@ -146,7 +146,7 @@ type VoiceCommandEvent struct {
 	Html_body string
 	Public bool
 	Trusted bool
-	Author_id	uint64
+	Author_id	int64
 	Attachments	[]Attachment
 }
 

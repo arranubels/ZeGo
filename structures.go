@@ -1,14 +1,14 @@
 package zego
 
 type Pagination struct {
-        Count         uint32 
+        Count         int64
         Created       string 
         Next_page     string 
         Previous_page string 
 }
 
 type IdValue struct {
-	Id		uint32
+	Id		int64
 	Value	interface{}
 }
 

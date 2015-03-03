@@ -5,12 +5,12 @@ type CommentArray struct {
 }
 
 type Comment struct {
-        Id                    uint64 
+        Id                    int64
         Type                  string 
         Body                  string 
         Html_body             string 
         Public                bool 
-        Author_id             uint32 
+        Author_id             int64
         Attachments           []Attachment
         Via                   interface{} 
         Metadata              interface{} 
